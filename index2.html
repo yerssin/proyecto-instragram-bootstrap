@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .card-body img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand"><i class="fab fa-instagram"></i> Instagram</a>
+            <form class="form-inline">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                    create a new post
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                            class="fas fa-cog mx-3"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center">
+        <a href="index.html" class="btn btn-light"><i class="fas fa-th"></i></a>
+        <a href="index2.html" class="btn btn-secondary"><i class="fas fa-stop"></i></a>
+    </div>
+
+    <div class="card" style="width: 500px;margin: 40px auto;">
+        <div class="card-header bg-transparent">
+            <h3>Mi primera foto</h3>
+        </div>
+        <div class="card-body p-0">
+            <img class="img-fluid"
+                src="https://vignette.wikia.nocookie.net/central/images/1/10/Donde-ver-futbol-temporada-2017-2018.jpg/revision/latest?cb=20170925224041"
+                alt="">
+            <p class="card-text m-1">23 Likes</p>
+            <p class="card-text m-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias enim
+                cumque
+                nemo quibusdam corporis aut voluptatibus perspiciatis quis sed ut vitae repudiandae laborum.</p>
+            <p class="card-text m-1">
+                <i class="far fa-heart mx-2"></i>
+                comments...
+                <i class="fas fa-ellipsis-v float-right m-1"></i>
+            </p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 500px;margin: 40px auto;">
+        <div class="card-header bg-transparent">
+            <h3>Mi primera foto</h3>
+        </div>
+        <div class="card-body p-0">
+            <img class="img-fluid"
+                src="https://as01.epimg.net/futbol/imagenes/2015/11/12/album/1447355408_196439_1447356034_album_grande.jpg"
+                alt="">
+            <p class="card-text m-1">23 Likes</p>
+            <p class="card-text m-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias enim
+                cumque
+                nemo quibusdam corporis aut voluptatibus perspiciatis quis sed ut vitae repudiandae laborum.</p>
+            <p class="card-text m-1">
+                <i class="far fa-heart mx-2"></i>
+                comments...
+                <i class="fas fa-ellipsis-v float-right"></i>
+            </p>
+        </div>
+    </div>
+    <div class="card" style="width: 500px;margin: 40px auto;">
+        <div class="card-header bg-transparent">
+            <h3>Mi primera foto</h3>
+        </div>
+        <div class="card-body p-0">
+            <img class="img-fluid"
+                src="https://www.neogol.com/wp-content/uploads/2016/07/balon-premier-league-2016-2017-450x334.jpg"
+                alt="">
+            <p class="card-text m-1">23 Likes</p>
+            <p class="card-text m-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias enim
+                cumque
+                nemo quibusdam corporis aut voluptatibus perspiciatis quis sed ut vitae repudiandae laborum.</p>
+            <p class="card-text m-1">
+                <i class="far fa-heart mx-2"></i>
+                comments...
+                <i class="fas fa-ellipsis-v float-right m-1"></i>
+            </p>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                            </div>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                        <button type="button py-3" class="btn btn-outline-secondary"><i
+                                class="fas fa-camera"></i></button>
+                        <button type="button py-3" class="btn btn-outline-secondary"><i
+                                class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
